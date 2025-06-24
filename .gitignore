@@ -1,0 +1,193 @@
+# note自動投稿システム用 .gitignore
+
+# === 機密情報 ===
+# APIキーやログイン情報を含む設定ファイル
+llm_config.json
+note_login_config.json
+*.key
+*.secret
+.env
+.env.local
+
+# === Python関連 ===
+# 仮想環境
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python キャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# === IDE・エディタ ===
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# === macOS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# === ブラウザ・WebDriver ===
+# Selenium WebDriver
+chromedriver
+geckodriver
+*.log
+selenium-debug.log
+
+# Chrome User Data
+chrome_user_data/
+user_data/
+
+# === 一時ファイル・ログ ===
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+tmp/
+
+# === データファイル ===
+# 生成された記事データ（機密性による）
+data/articles/*.json
+data/generated_articles/
+data/drafts/
+
+# ただし、テンプレートは保持
+!data/article_templates.txt
+!data/articles/.gitkeep
+
+# === テスト・デバッグ ===
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# === バックアップ ===
+*.bak
+*.backup
+*~
+*.orig
+
+# === システム固有 ===
+# デスクトップ実行ファイル（ユーザー固有のパス含む）
+*.command
+*.app/
+
+# === プロジェクト固有 ===
+# 開発中の実験ファイル
+test_*.py
+debug_*.py
+experimental/
+sandbox/
+
+# 設定ファイルのサンプルは保持
+!*_sample.json
+!*_template.json
+!*_example.json
+
+# === Node.js（将来的にフロントエンド追加時） ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# === その他 ===
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar 

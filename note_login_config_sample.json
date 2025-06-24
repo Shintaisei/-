@@ -1,0 +1,7 @@
+{
+  "email": "your_note_email@example.com",
+  "password": "your_note_password",
+  "login_url": "https://note.com/login",
+  "timeout": 30,
+  "retry_count": 3
+} 

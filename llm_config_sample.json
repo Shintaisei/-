@@ -1,0 +1,37 @@
+{
+  "openai_settings": {
+    "api_key": "YOUR_OPENAI_API_KEY_HERE",
+    "model": "gpt-4o",
+    "temperature": 0.7,
+    "max_tokens": 3000,
+    "enabled": true
+  },
+  "claude_editor_settings": {
+    "provider": "anthropic",
+    "model": "claude-3-5-sonnet-20241022",
+    "api_key": "YOUR_CLAUDE_API_KEY_HERE",
+    "temperature": 0.7,
+    "max_tokens": 4000,
+    "enabled": true,
+    "features": {
+      "proofreading": true,
+      "buzz_elements": true,
+      "title_improvement": true,
+      "comprehensive_improvement": true
+    }
+  },
+  "openai_editor_settings": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "api_key": "YOUR_OPENAI_API_KEY_HERE",
+    "temperature": 0.7,
+    "max_tokens": 3500,
+    "enabled": true,
+    "features": {
+      "proofreading": true,
+      "buzz_elements": true,
+      "title_improvement": true,
+      "comprehensive_improvement": true
+    }
+  }
+} 

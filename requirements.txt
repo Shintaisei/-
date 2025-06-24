@@ -1,0 +1,11 @@
+# Web自動化
+selenium==4.20.0
+
+# AI記事生成・編集
+openai>=1.0.0                # OpenAI GPT-4o（記事生成・編集）
+anthropic>=0.18.0            # Claude 3.5 Sonnet（記事編集）
+
+# LangChain（AI編集エージェント）
+langchain>=0.1.0             # LangChainコア
+langchain-anthropic>=0.1.0   # Claude統合
+langchain-core>=0.1.0        # LangChain基盤 
